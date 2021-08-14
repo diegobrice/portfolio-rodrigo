@@ -1,0 +1,144 @@
+main {
+  color: white;
+  height: 100vh;
+  background-color: black;
+  background-image: url(../../public/images/black_guitar.jpeg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+header {
+  nav {
+    position: fixed;
+    width: 100%;
+    background-color: black;
+
+    ul {
+      display: flex;
+      justify-content: center;
+      li {
+        a {
+          font-family: $font-link;
+          padding: 10px 20px;
+          margin: 10px;
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+  .title {
+    padding-top: 80px;
+
+    h1 {
+      text-align: center;
+      font-size: 60px;
+      letter-spacing: -3px;
+    }
+
+    .description {
+      display: flex;
+      justify-content: center;
+
+      li {
+        &::after {
+          margin: 0 20px;
+          content: "|";
+        }
+        &:last-child {
+          &::after {
+            margin: 0;
+            content: "";
+          }
+        }
+      }
+    }
+  }
+}
+
+.album {
+  display: flex;
+
+  &__image {
+    width: 50%;
+
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  &__content {
+    width: 50%;
+    padding: 50px;
+  }
+}
+
+.details {
+  display: flex;
+  background-color: rgb(247, 247, 247);
+
+  h2 {
+    &::before {
+      content: "";
+      display: block;
+      margin-bottom: 10px;
+      width: 20px;
+      height: 2px;
+      background-color: black;
+    }
+  }
+
+  div {
+    padding: 100px;
+  }
+
+  &__item {
+    p {
+      margin: 20px 0 20px;
+    }
+  }
+
+  .two {
+    background-color: rgb(252, 252, 252);
+  }
+}
+
+.footer {
+  color: white;
+  text-align: center;
+
+  &__links {
+    background-image: url(../../public/images/footer.jpg);
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+
+    h3 {
+      &::after {
+        content: "";
+        display: block;
+        margin-top: 10px;
+        width: 20px;
+        height: 2px;
+        background-color: white;
+      }
+    }
+  }
+  &__social {
+    height: 80px;
+    color: rgb(135, 135, 135);
+    background-color: #2e2e2e;
+    padding: 40px 0;
+  }
+  &__copy {
+    padding: 20px 0;
+    background-color: black;
+  }
+}

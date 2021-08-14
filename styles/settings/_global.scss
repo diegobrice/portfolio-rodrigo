@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-primary;
+}
+
+h1 {
+  font-family: $font-logo;
+}
+
+h2,
+h3 {
+  font-family: $font-link;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.btn {
+  border: 1px solid rgb(229, 229, 229);
+  padding: 10px 20px;
+  display: inline-block;
+  color: black;
+  transition: background-color 0.3s ease-in;
+
+  &:hover {
+    background-color: rgb(229, 229, 229);
+    transition: background-color 0.3s ease-in;
+  }
+}
