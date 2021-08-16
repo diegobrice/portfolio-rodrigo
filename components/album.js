@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Album() {
   return (
     <section className="album">
@@ -14,9 +16,9 @@ export default function Album() {
             praesentium dignissimos!
           </p>
           <h3>COMING 29/10/2021</h3>
-          <a href="/distancia" className="btn">
-            View More
-          </a>
+          <Link href="/distancia">
+            <a className="btn">View More</a>
+          </Link>
         </div>
       </div>
     </section>

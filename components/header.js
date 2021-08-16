@@ -1,35 +1,49 @@
+import Link from "next/link";
+
 export default function Header() {
   return (
     <header>
       <nav>
         <div className="logo">
-          <a href="/">
-            <h1>Rodrigo Almonte</h1>
-          </a>
+          <Link href="/">
+            <a>
+              <h1>Rodrigo Almonte</h1>
+            </a>
+          </Link>
         </div>
         <ul>
           {/* <li>
             <a href="concerts">Concerts</a>
           </li> */}
           <li>
-            <a href="about">About</a>
+            <Link href="about">
+              <a>About</a>
+            </Link>
           </li>
           <li>
-            <a href="distancia">Distancia</a>
+            <Link href="distancia">
+              <a>Distancia</a>
+            </Link>
           </li>
           <li className="nav-title">
-            <a href="/">
-              <h1>Rodrigo Almonte</h1>
-            </a>
+            <Link href="/">
+              <a>
+                <h1>Rodrigo Almonte</h1>
+              </a>
+            </Link>
           </li>
           <li>
-            <a href="media">Media</a>
+            <Link href="media">
+              <a>Media</a>
+            </Link>
           </li>
           {/* <li>
             <a href="shop">Shop</a>
           </li> */}
           <li>
-            <a href="connect">Connect</a>
+            <Link href="connect">
+              <a>Connect</a>
+            </Link>
           </li>
         </ul>
       </nav>
