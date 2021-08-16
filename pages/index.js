@@ -1,5 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
+import Album from "../components/album";
+import Articles from "../components/articles";
+import Footer from "../components/footer";
+import Header from "../components/header";
+import Hero from "../components/hero";
 
 export default function Home() {
   return (
@@ -10,118 +15,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <header>
-          <nav>
-            <ul>
-              <li>
-                <a href="Concerts">Concerts</a>
-              </li>
-              <li>
-                <a href="About">About</a>
-              </li>
-              <li>
-                <a href="Media">Media</a>
-              </li>
-              <li>
-                <a href="Shop">Shop</a>
-              </li>
-              <li>
-                <a href="Connect">Connect</a>
-              </li>
-            </ul>
-          </nav>
-          <div className="container">
-            <div className="title">
-              <h1>
-                <a href="https://nextjs.org">Rodrigo Almonte</a>
-              </h1>
-              <ul className="description">
-                <li>Musician</li>
-                <li>Guitarist</li>
-                <li>Composer</li>
-                <li>Educator</li>
-              </ul>
-            </div>
-          </div>
-        </header>
-      </main>
-
-      <section className="album">
-        <div className="album__image">
-          <img src="/images/distancia_album.jpg" alt="Vercel Logo" />
-        </div>
-        <div className="album__content">
-          <h2>DISTANCIA</h2>
-          <h3>COMING 29/10/2021</h3>
-        </div>
-      </section>
-
-      <section className="details">
-        <div className="details__item">
-          <h2>Peruvian Jazz Project </h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Repellendus, dolorum consequatur.
-          </p>
-          <a className="btn" href="">
-            View more
-          </a>
-        </div>
-        <div className="details__item two">
-          <h2>Teaching</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Repellendus, dolorum consequatur.
-          </p>
-          <a className="btn" href="">
-            View more
-          </a>
-        </div>
-        <div className="details__item">
-          <h2>Resources</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Repellendus, dolorum consequatur.
-          </p>
-          <a className="btn" href="">
-            View more
-          </a>
-        </div>
-      </section>
-
-      <footer className="footer">
-        <div className="footer__links">
-          <div className="link__item">
-            <h3>Links</h3>
-          </div>
-          <div className="link__item">
-            <h3>Connect</h3>
-          </div>
-          <div className="link__item">
-            <h3>Booking</h3>
-          </div>
-        </div>
-        <div className="footer__social">
-          <ul>
-            <li>
-              <i className="fab fa-facebook-square"></i>
-            </li>
-            <li>
-              <i className="fab fa-instagram"></i>
-            </li>
-            <li>
-              <i className="fab fa-youtube"></i>
-            </li>
-            <li>
-              <i className="fab fa-patreon"></i>
-            </li>
-          </ul>
-        </div>
-        <div className="footer__copy">
-          <p>Copyright © 2021 All rights reserved</p>
-        </div>
-      </footer>
+      <Header></Header>
+      <Hero></Hero>
+      <Album></Album>
+      <Articles></Articles>
+      <Footer></Footer>
     </>
   );
 }

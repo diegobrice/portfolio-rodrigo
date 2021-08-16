@@ -1,0 +1,25 @@
+.title {
+  color: white;
+  height: 50vh;
+  padding-top: 80px;
+  background-image: url(../../public/images/BIOGRAFIA.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &__distancia {
+    background-image: url(../../public/images/ALBUM-Alargado.jpg);
+    background-size: contain;
+    
+    @include mq(tablet) {
+      background-size: cover;
+    }
+  }
+
+  h2 {
+    display: none;
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 0px 0px 5px black;
+  }
+}

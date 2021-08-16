@@ -1,3 +1,23 @@
+@mixin mq($size) {
+  @if $size == mobile {
+    @media (max-width: 766px) {
+      @content;
+    }
+  } @else if $size == tablet {
+    @media (max-width: 900px) {
+      @content;
+    }
+  } @else if $size == desktop {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  } @else if $size == desktop-lg {
+    @media (min-width: 1201px) {
+      @content;
+    }
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -27,6 +47,15 @@ ol {
   list-style: none;
 }
 
+p {
+  line-height: 22px;
+}
+
+hr {
+  margin: 20px 0 30px;
+  border-color: rgba(21, 21, 21, 0.15);
+}
+
 .btn {
   border: 1px solid rgb(229, 229, 229);
   padding: 10px 20px;
@@ -37,5 +66,29 @@ ol {
   &:hover {
     background-color: rgb(229, 229, 229);
     transition: background-color 0.3s ease-in;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 40px;
+  width: 100%;
+  margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  flex-direction: inherit;
+}
+
+.container-img {
+  max-width: 1200px;
+  padding: 0 40px;
+  width: 100%;
+  margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  flex-direction: inherit;
+
+  @include mq(tablet) {
+    padding: 0;
   }
 }

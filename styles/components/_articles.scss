@@ -1,0 +1,40 @@
+.details {
+  display: flex;
+  background-color: rgb(247, 247, 247);
+
+  @include mq(mobile) {
+    flex-direction: column;
+  }
+
+  h2 {
+    &::before {
+      content: "";
+      display: block;
+      margin-bottom: 10px;
+      width: 20px;
+      height: 2px;
+      background-color: black;
+    }
+  }
+
+  &__item {
+    padding: 100px;
+
+    @include mq(desktop) {
+      padding: 50px;
+    }
+    @include mq(tablet) {
+      padding: 35px;
+    }
+    @include mq(mobile) {
+      padding: 50px;
+    }
+    p {
+      margin: 20px 0 20px;
+    }
+  }
+
+  .two {
+    background-color: rgb(252, 252, 252);
+  }
+}

@@ -1,0 +1,61 @@
+.hero {
+  color: white;
+  height: 100vh;
+  background-color: black;
+  background-image: url(../../public/images/home.jpg);
+  // background-attachment: fixed;
+  background-size: cover;
+  text-shadow: 1px 1px 10px black;
+
+  @include mq(mobile) {
+    background-position: -200px;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 60px;
+    letter-spacing: -3px;
+  }
+
+  .description {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+    padding: 100px 0 20px;
+    background: linear-gradient(transparent, black);
+
+    @include mq(mobile) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    li {
+      &::after {
+        margin: 0 20px;
+        content: "|";
+      }
+      &:last-child {
+        &::after {
+          margin: 0;
+          content: "";
+        }
+      }
+      @include mq(mobile) {
+        margin: 10px 0;
+        font-size: 20px;
+        &::before {
+          margin: 0;
+          content: "-";
+          margin-right: 10px;
+        }
+        &::after {
+          margin: 0;
+          content: "-";
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
