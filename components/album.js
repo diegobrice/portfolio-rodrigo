@@ -1,10 +1,17 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Album() {
   return (
     <section className="album">
       <div className="album__image">
-        <img src="/images/distancia_album.jpg" alt="Vercel Logo" />
+        <Image
+          src="/images/distancia_album.jpg"
+          layout="responsive"
+          width="100"
+          height="100"
+          alt="bio"
+        />
       </div>
       <div className="album__content">
         <div>

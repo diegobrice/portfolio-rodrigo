@@ -1,0 +1,125 @@
+.album__description {
+  padding: 40px 0;
+
+  p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #353535;
+  }
+}
+
+.cover {
+  position: relative;
+  width: 100%;
+  height: 600px;
+
+  @include mq(tablet) {
+    height: 400px;
+  }
+
+  @include mq(mobile) {
+    height: 300px;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+
+
+.about {
+  display: flex;
+  padding: 40px;
+
+  @include mq(tablet) {
+    padding: 40px 0;
+  }
+
+  @include mq(mobile) {
+    flex-direction: column;
+  }
+
+  .image {
+    position: relative;
+    min-width: 400px;
+    margin-right: 40px;
+    height: 650px;
+
+    @include mq(tablet) {
+      height: 420px;
+      min-width: 250px;
+    }
+
+    @include mq(mobile) {
+      min-width: 100%;
+      order: 1;
+    }
+
+    img {
+      width: 100%;
+      object-position: top;
+    }
+  }
+}
+
+.about__description {
+  line-height: 24px;
+  font-size: 18px;
+  color: #353535;
+
+  .content {
+    &__image {
+      max-width: 600px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+
+  ul {
+    margin-bottom: 20px;
+
+    li {
+      padding: 10px 0;
+      position: relative;
+      padding-left: 20px;
+
+      &::before {
+        content: "";
+        display: block;
+        width: 16px;
+        height: 16px;
+        background: url(../../public/note.svg);
+        position: absolute;
+        left: 0px;
+        top: 13px;
+      }
+    }
+  }
+}
+
+.media{
+  padding: 40px 0 80px;
+}
+
+.media-slide{
+  position: relative;
+  max-height: 600px;
+  height: 600px;
+  
+  @include mq(tablet) {
+    max-height: 450px;
+    height: 450px;
+  }
+
+  @include mq(mobile) {
+    max-height: 250px;
+    height: 250px;
+  }
+}

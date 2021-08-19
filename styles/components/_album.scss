@@ -6,6 +6,7 @@
   }
 
   &__image {
+    position: relative;
     width: 40%;
 
     @include mq(tablet) {
