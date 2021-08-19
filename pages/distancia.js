@@ -1,27 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
-import { useEffect } from "react";
 import Articles from "../components/articles";
 import Footer from "../components/footer";
 import Header from "../components/header";
-import Swal from "sweetalert2/dist/sweetalert2.js";
 
 export default function Home() {
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      Swal.fire({
-        title: "DISTANCIA (Debut Album ) - Crowdfunding",
-        html: "We need your help to get my debut album released. Follow the link to learn more.",
-        showCloseButton: true,
-        showCancelButton: false,
-        focusConfirm: false,
-        confirmButtonText:
-          '<a target="_blank" href="https://fundit.ie/project/rodrigo-almonte-distancia-debut-album">Visit</a>',
-      });
-    }, 3000);
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
     <>
       <Head>
