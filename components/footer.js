@@ -9,6 +9,11 @@ export default function Footer() {
             <h3>Links</h3>
             <ul>
               <li>
+                <Link href="/">
+                  <a>Home</a>
+                </Link>
+              </li>
+              <li>
                 <Link href="about">
                   <a>About</a>
                 </Link>
@@ -24,8 +29,18 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="connect">
-                  <a>Connect</a>
+                <Link href="peru">
+                  <a>Peru</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="teaching">
+                  <a>Teaching</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="resources">
+                  <a>Resources</a>
                 </Link>
               </li>
             </ul>
@@ -34,16 +49,24 @@ export default function Footer() {
             <h3>Connect</h3>
             <ul>
               <li>
-                <a href="concerts">Facebook</a>
+                <Link href="https://fundit.ie/project/rodrigo-almonte-distancia-debut-album">
+                  <a target="_blank">Fundit</a>
+                </Link>
               </li>
               <li>
-                <a href="concerts">Twitter</a>
+                <Link href="https://www.facebook.com/rdrg.24/">
+                  <a target="_blank">Facebook</a>
+                </Link>
               </li>
               <li>
-                <a href="concerts">Youtube</a>
+                <Link href="https://www.instagram.com/rodrigoalmonte.music/">
+                  <a target="_blank">Instagram</a>
+                </Link>
               </li>
               <li>
-                <a href="concerts">Patreon</a>
+                <Link href="https://www.youtube.com/channel/UC5INDN3DJ2o3GG1jC4NiWKA/videos">
+                  <a target="_blank">Youtube</a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -51,10 +74,16 @@ export default function Footer() {
             <h3>Booking</h3>
             <ul>
               <li>
-                <a href="concerts">Email</a>
+                <a
+                  href="mailto:rodrigoalmonteguitar@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Email
+                </a>
               </li>
               <li>
-                <a href="concerts">Phone</a>
+                <a href="tel:+353-830279715">Phone</a>
               </li>
             </ul>
           </div>

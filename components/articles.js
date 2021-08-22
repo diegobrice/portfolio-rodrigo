@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Articles() {
   return (
     <section className="details">
@@ -7,9 +9,9 @@ export default function Articles() {
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus,
           dolorum consequatur.
         </p>
-        <a className="btn" href="">
-          View more
-        </a>
+        <Link href="peru">
+          <a className="btn">View more</a>
+        </Link>
       </div>
       <div className="details__item two">
         <h2>Teaching</h2>
@@ -17,9 +19,9 @@ export default function Articles() {
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus,
           dolorum consequatur.
         </p>
-        <a className="btn" href="">
-          View more
-        </a>
+        <Link href="teaching">
+          <a className="btn">View more</a>
+        </Link>
       </div>
       <div className="details__item">
         <h2>Resources</h2>
@@ -27,9 +29,9 @@ export default function Articles() {
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus,
           dolorum consequatur.
         </p>
-        <a className="btn" href="">
-          View more
-        </a>
+        <Link href="resources">
+          <a className="btn">View more</a>
+        </Link>
       </div>
     </section>
   );

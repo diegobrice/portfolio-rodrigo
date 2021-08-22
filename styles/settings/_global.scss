@@ -56,16 +56,31 @@ hr {
   border-color: rgba(21, 21, 21, 0.15);
 }
 
+.color-black {
+  color: black;
+  font-weight: bold;
+}
+
 .btn {
   border: 1px solid rgb(229, 229, 229);
   padding: 10px 20px;
   display: inline-block;
   color: black;
   transition: background-color 0.3s ease-in;
+  margin-right: 16px;
 
   &:hover {
     background-color: rgb(229, 229, 229);
     transition: background-color 0.3s ease-in;
+  }
+}
+
+.cta{
+  background-color: rgb(56, 75, 138);
+  color: white;
+
+  &:hover {
+    background-color: black;
   }
 }
 

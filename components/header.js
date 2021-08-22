@@ -12,9 +12,6 @@ export default function Header() {
           </Link>
         </div>
         <ul>
-          {/* <li>
-            <a href="concerts">Concerts</a>
-          </li> */}
           <li>
             <Link href="about">
               <a>About</a>
@@ -25,6 +22,11 @@ export default function Header() {
               <a>Distancia</a>
             </Link>
           </li>
+          <li>
+            <Link href="media">
+              <a>Media</a>
+            </Link>
+          </li>
           <li className="nav-title">
             <Link href="/">
               <a>
@@ -33,16 +35,18 @@ export default function Header() {
             </Link>
           </li>
           <li>
-            <Link href="media">
-              <a>Media</a>
+            <Link href="peru">
+              <a>Peru</a>
             </Link>
           </li>
-          {/* <li>
-            <a href="shop">Shop</a>
-          </li> */}
           <li>
-            <Link href="connect">
-              <a>Connect</a>
+            <Link href="teaching">
+              <a>Teaching</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="resources">
+              <a>Resources</a>
             </Link>
           </li>
         </ul>
